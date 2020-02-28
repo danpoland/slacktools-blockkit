@@ -1,0 +1,14 @@
+*.egg
+*.eggs
+*.egg-info
+
+.coverage
+coverage.xml
+
+build/
+dist/
+
+__pycache__/
+*.pyc
+
+.venv/
