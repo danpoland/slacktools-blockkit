@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="slacktools-blockkit",
-    version="0.10.0",
+    version="0.11.0",
     author="Daniel Poland",
     author_email="dan@crispy.dev",
     long_description=long_description,

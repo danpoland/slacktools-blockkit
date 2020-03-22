@@ -666,3 +666,207 @@ snapshots['TestFixedStaticSelectInput.test_override[confirm-value3] 1'] = {
     'optional': True,
     'type': 'input'
 }
+
+snapshots['TestFixedButton.test_fixed 1'] = {
+    'action_id': 'action_id',
+    'confirm': {
+        'confirm': {
+            'text': 'confirm',
+            'type': 'plain_text'
+        },
+        'deny': {
+            'text': 'deny',
+            'type': 'plain_text'
+        },
+        'text': {
+            'text': 'text',
+            'type': 'plain_text'
+        },
+        'title': {
+            'text': 'title',
+            'type': 'plain_text'
+        }
+    },
+    'style': 'primary',
+    'text': {
+        'text': 'text',
+        'type': 'plain_text'
+    },
+    'type': 'button',
+    'value': 'None'
+}
+
+snapshots['TestFixedButton.test_override[action_id-override] 1'] = {
+    'action_id': 'override',
+    'confirm': {
+        'confirm': {
+            'text': 'confirm',
+            'type': 'plain_text'
+        },
+        'deny': {
+            'text': 'deny',
+            'type': 'plain_text'
+        },
+        'text': {
+            'text': 'text',
+            'type': 'plain_text'
+        },
+        'title': {
+            'text': 'title',
+            'type': 'plain_text'
+        }
+    },
+    'style': 'primary',
+    'text': {
+        'text': 'text',
+        'type': 'plain_text'
+    },
+    'type': 'button',
+    'value': 'None'
+}
+
+snapshots['TestFixedButton.test_override[text-override] 1'] = {
+    'action_id': 'action_id',
+    'confirm': {
+        'confirm': {
+            'text': 'confirm',
+            'type': 'plain_text'
+        },
+        'deny': {
+            'text': 'deny',
+            'type': 'plain_text'
+        },
+        'text': {
+            'text': 'text',
+            'type': 'plain_text'
+        },
+        'title': {
+            'text': 'title',
+            'type': 'plain_text'
+        }
+    },
+    'style': 'primary',
+    'text': {
+        'text': 'override',
+        'type': 'plain_text'
+    },
+    'type': 'button',
+    'value': 'None'
+}
+
+snapshots['TestFixedButton.test_override[value-override] 1'] = {
+    'action_id': 'action_id',
+    'confirm': {
+        'confirm': {
+            'text': 'confirm',
+            'type': 'plain_text'
+        },
+        'deny': {
+            'text': 'deny',
+            'type': 'plain_text'
+        },
+        'text': {
+            'text': 'text',
+            'type': 'plain_text'
+        },
+        'title': {
+            'text': 'title',
+            'type': 'plain_text'
+        }
+    },
+    'style': 'primary',
+    'text': {
+        'text': 'text',
+        'type': 'plain_text'
+    },
+    'type': 'button',
+    'value': 'override'
+}
+
+snapshots['TestFixedButton.test_override[confirm-value5] 1'] = {
+    'action_id': 'action_id',
+    'confirm': {
+        'confirm': {
+            'text': 'override',
+            'type': 'plain_text'
+        },
+        'deny': {
+            'text': 'override',
+            'type': 'plain_text'
+        },
+        'text': {
+            'text': 'Override',
+            'type': 'plain_text'
+        },
+        'title': {
+            'text': 'override',
+            'type': 'plain_text'
+        }
+    },
+    'style': 'primary',
+    'text': {
+        'text': 'text',
+        'type': 'plain_text'
+    },
+    'type': 'button',
+    'value': 'None'
+}
+
+snapshots['TestFixedButton.test_override[style-Styles.DANGER] 1'] = {
+    'action_id': 'action_id',
+    'confirm': {
+        'confirm': {
+            'text': 'confirm',
+            'type': 'plain_text'
+        },
+        'deny': {
+            'text': 'deny',
+            'type': 'plain_text'
+        },
+        'text': {
+            'text': 'text',
+            'type': 'plain_text'
+        },
+        'title': {
+            'text': 'title',
+            'type': 'plain_text'
+        }
+    },
+    'style': 'danger',
+    'text': {
+        'text': 'text',
+        'type': 'plain_text'
+    },
+    'type': 'button',
+    'value': 'None'
+}
+
+snapshots['TestFixedButton.test_override[url-http://crispy.override] 1'] = {
+    'action_id': 'action_id',
+    'confirm': {
+        'confirm': {
+            'text': 'confirm',
+            'type': 'plain_text'
+        },
+        'deny': {
+            'text': 'deny',
+            'type': 'plain_text'
+        },
+        'text': {
+            'text': 'text',
+            'type': 'plain_text'
+        },
+        'title': {
+            'text': 'title',
+            'type': 'plain_text'
+        }
+    },
+    'style': 'primary',
+    'text': {
+        'text': 'text',
+        'type': 'plain_text'
+    },
+    'type': 'button',
+    'url': 'http://crispy.override',
+    'value': 'None'
+}

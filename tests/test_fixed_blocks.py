@@ -6,6 +6,44 @@ from blockkit.fixed_blocks import *
 from blockkit.objects import ConfirmationDialog, Option, PlainText
 
 
+class MockFixedButton(FixedButton):
+    action_id = "action_id"
+    text = "text"
+    value = "value"
+    url = "http://crispy.dev"
+    confirm = ConfirmationDialog(
+        text_object=PlainText("text"), title="title", confirm="confirm", deny="deny",
+    )
+    style = FixedButton.Styles.PRIMARY
+
+
+class TestFixedButton:
+    def test_fixed(self, snapshot):
+        snapshot.assert_match(MockFixedButton())
+
+    @pytest.mark.parametrize(
+        "field, value",
+        [
+            ("action_id", "override"),
+            ("text", "override"),
+            ("value", "override"),
+            ("url", "http://crispy.override"),
+            ("style", FixedButton.Styles.DANGER),
+            (
+                "confirm",
+                ConfirmationDialog(
+                    text_object=PlainText("Override"),
+                    title="override",
+                    confirm="override",
+                    deny="override",
+                ),
+            ),
+        ],
+    )
+    def test_override(self, snapshot, field, value):
+        snapshot.assert_match(MockFixedButton(**{field: value}))
+
+
 @pytest.fixture
 def mock_fixed_input():
     class MockFixedInput(FixedInputMixin, Input):
