@@ -6,15 +6,35 @@ from .blocks import (
     PlainTextInput,
     StaticSelectInput,
 )
+from .elements import Button
 from .objects import ConfirmationDialog, Option, OptionGroup
 
 __all__ = (
+    "FixedButton",
     "FixedInputMixin",
     "FixedDatePickerInput",
     "FixedStaticSelectInput",
     "FixedPlainTextInput",
     "FixedConversationsSelectInput",
 )
+
+
+class FixedButton(Button):
+    action_id = None
+    text = None
+    style = None
+    confirm = None
+
+    def __init__(self, **kwargs):
+        super().__init__(
+            **{
+                "action_id": self.action_id,
+                "text": self.text,
+                "style": self.style,
+                "confirm": self.confirm,
+                **kwargs,
+            }
+        )
 
 
 class FixedInputMixin:
